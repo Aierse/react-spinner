@@ -1,7 +1,21 @@
 {
   "name": "react-spinner",
   "version": "0.1.0",
-  "private": true,
+  "description": "Provide basic spinner component for react",
+  "author": "Aierse <dbsgur2008@gmail.com>",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aierse/react-spinner"
+  },
+  "bugs": "https://github.com/Aierse/react-spinner/issues",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "spinner",
+    "loader",
+    "component"
+  ],
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
