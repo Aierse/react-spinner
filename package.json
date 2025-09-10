@@ -1,12 +1,18 @@
 {
-  "name": "react-spinner",
-  "version": "0.1.0",
+  "name": "@aierse/react-spinner",
+  "version": "0.2.0",
   "description": "Provide basic spinner component for react",
-  "author": "Aierse <dbsgur2008@gmail.com>",
-  "main": "src/index.ts",
+  "authors": [
+    "Aierse"
+  ],
+  "main": "dist/Spinner/index.js",
+  "types": "dist/Spinner/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/Aierse/react-spinner"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "bugs": "https://github.com/Aierse/react-spinner/issues",
   "license": "MIT",
@@ -17,6 +23,7 @@
     "component"
   ],
   "dependencies": {
+    "@aierse/react-modal": "^0.2.0",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
     "@testing-library/react": "^16.3.0",
@@ -32,27 +39,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "tsc && node src/copy-css.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
   }
 }

@@ -1,0 +1,52 @@
+.dot-typing {
+  position: relative;
+  left: -9999px;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+  background: var(--dot-color);
+  box-shadow: calc(9999px - var(--dot-size) * 1.5) 0 0 0 var(--dot-color),
+    9999px 0 0 0 var(--dot-color),
+    calc(9999px + var(--dot-size) * 1.5) 0 0 0 var(--dot-color);
+  animation: dot-typing 1.5s infinite linear;
+}
+
+@keyframes dot-typing {
+  0% {
+    box-shadow: calc(9999px - var(--dot-size) * 1.5) 0 0 0 var(--dot-color),
+      9999px 0 0 0 var(--dot-color),
+      calc(9999px + var(--dot-size) * 1.5) 0 0 0 var(--dot-color);
+  }
+  16.667% {
+    box-shadow: calc(9999px - var(--dot-size) * 1.5) calc(var(--dot-size) * -1)
+        0 0 var(--dot-color),
+      9999px 0 0 0 var(--dot-color),
+      calc(9999px + var(--dot-size) * 1.5) 0 0 0 var(--dot-color);
+  }
+  33.333% {
+    box-shadow: calc(9999px - var(--dot-size) * 1.5) 0 0 0 var(--dot-color),
+      9999px 0 0 0 var(--dot-color),
+      calc(9999px + var(--dot-size) * 1.5) 0 0 0 var(--dot-color);
+  }
+  50% {
+    box-shadow: calc(9999px - var(--dot-size) * 1.5) 0 0 0 var(--dot-color),
+      9999px calc(var(--dot-size) * -1) 0 0 var(--dot-color),
+      calc(9999px + var(--dot-size) * 1.5) 0 0 0 var(--dot-color);
+  }
+  66.667% {
+    box-shadow: calc(9999px - var(--dot-size) * 1.5) 0 0 0 var(--dot-color),
+      9999px 0 0 0 var(--dot-color),
+      calc(9999px + var(--dot-size) * 1.5) 0 0 0 var(--dot-color);
+  }
+  83.333% {
+    box-shadow: calc(9999px - var(--dot-size) * 1.5) 0 0 0 var(--dot-color),
+      9999px 0 0 0 var(--dot-color),
+      calc(9999px + var(--dot-size) * 1.5) calc(var(--dot-size) * -1) 0 0
+        var(--dot-color);
+  }
+  100% {
+    box-shadow: calc(9999px - var(--dot-size) * 1.5) 0 0 0 var(--dot-color),
+      9999px 0 0 0 var(--dot-color),
+      calc(9999px + var(--dot-size) * 1.5) 0 0 0 var(--dot-color);
+  }
+}

@@ -1,0 +1,30 @@
+.dot-carousel {
+  position: relative;
+  left: -9999px;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+  background: var(--dot-color);
+  box-shadow: calc(9999px - var(--dot-size) * 1.5) 0 0 0 var(--dot-color),
+    9999px 0 0 0 var(--dot-color),
+    calc(9999px + var(--dot-size) * 1.5) 0 0 0 var(--dot-color);
+  animation: dot-carousel 1.5s infinite linear;
+}
+
+@keyframes dot-carousel {
+  0% {
+    box-shadow: calc(9999px - var(--dot-size) * 1.5) 0 0 -1px var(--dot-color),
+      9999px 0 0 1px var(--dot-color),
+      calc(9999px + var(--dot-size) * 1.5) 0 0 -1px var(--dot-color);
+  }
+  50% {
+    box-shadow: calc(9999px + var(--dot-size) * 1.5) 0 0 -1px var(--dot-color),
+      calc(9999px - var(--dot-size) * 1.5) 0 0 -1px var(--dot-color),
+      9999px 0 0 1px var(--dot-color);
+  }
+  100% {
+    box-shadow: 9999px 0 0 1px var(--dot-color),
+      calc(9999px + var(--dot-size) * 1.5) 0 0 -1px var(--dot-color),
+      calc(9999px - var(--dot-size) * 1.5) 0 0 -1px var(--dot-color);
+  }
+}
