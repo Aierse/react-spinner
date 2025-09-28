@@ -1,10 +1,13 @@
 {
   "name": "@aierse/react-spinner",
-  "version": "0.2.0",
+  "version": "0.2.1",
+  "private": false,
   "description": "Provide basic spinner component for react",
-  "authors": [
-    "Aierse"
-  ],
+  "author": {
+    "name": "Aierse",
+    "email": "dbsgur2008@gmail.com",
+    "url": "https://github.com/Aierse"
+  },
   "main": "dist/Spinner/index.js",
   "types": "dist/Spinner/index.d.ts",
   "repository": {
@@ -22,26 +25,17 @@
     "loader",
     "component"
   ],
-  "dependencies": {
-    "@aierse/react-modal": "^0.2.0",
-    "@testing-library/dom": "^10.4.1",
-    "@testing-library/jest-dom": "^6.8.0",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.126",
-    "@types/react": "^19.1.12",
-    "@types/react-dom": "^19.1.9",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-scripts": "5.0.1",
+  "peerDependencies": {
+    "react": "^18.2.1"
+  },
+  "devDependencies": {
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "@types/react": "^18.2.1"
+  },
+  "dependencies": {
+    "@aierse/react-modal": "^0.2.2"
   },
   "scripts": {
     "build": "tsc && node src/copy-css.js"
-  },
-  "devDependencies": {
-    "copyfiles": "^2.4.1"
   }
 }
